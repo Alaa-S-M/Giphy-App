@@ -1,5 +1,5 @@
 button {
-  background-color: #5193a3;
+  background-color: #3d7785;
   color: white;
   width: 20%;
   padding: 10px;
@@ -10,8 +10,8 @@ button {
   margin: 3%;
 }
 
-button :hover {
-  background-color: rgba(81, 147, 163, 0.842);
+button:hover {
+  background-color: rgba(62, 147, 167, 0.842);
 }
 
 input {

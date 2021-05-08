@@ -1,6 +1,6 @@
 
-$primaryBtnColor: rgb(81, 147, 163);
-$primaryHoverColor: rgba(81, 147, 163, 0.842);
+$primaryBtnColor: rgb(61, 119, 133);
+$primaryHoverColor: rgba(62, 147, 167, 0.842);
 $textColor: white;
 
 
@@ -14,8 +14,9 @@ button{
     border: none;
     outline: none;
     margin: 3%;
-    :hover{
-        background-color: $primaryHoverColor;
-    }
+   
 }
 
+button:hover{
+    background-color: $primaryHoverColor;
+}
