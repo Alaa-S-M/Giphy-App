@@ -5,10 +5,10 @@ function Display(props) {
     return (
         <div className='grid-container'>
 
-            { !!gifs && gifs.map((gif, index) => {
+            { !!gifs && gifs.map((gif) => {
                 return(
                     <img 
-                        key={index}
+                        key={gif.id}
                         src={gif.src}
                         alt={gif.alt}
                     />
