@@ -3,6 +3,7 @@ import './styles/style.css';
 
 import Form from './components/Form';
 import Display from './components/Display';
+import Header from './components/Header';
 import { useState } from 'react';
 
 function App() {
@@ -11,6 +12,9 @@ function App() {
 
   return (
     <div className="App">
+
+      <Header />
+
       <Form setGifs={setGifs} />
 
       <Display gifs={gifs} />
