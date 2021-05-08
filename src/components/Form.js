@@ -1,3 +1,4 @@
+import { getGifs } from '../gitGifs';
 
 function Form(props) {
 
@@ -10,29 +11,14 @@ function Form(props) {
         console.log(query);
         let url = `https://api.giphy.com/v1/gifs/search?api_key=s94Y5aXMRGvgV909X5F0RCggf5xpzkMB&q=${query}&limit=25&offset=0&rating=g&lang=en`;
 
-        getGifs(url);
+        getGifs(url)
+            .then(gifs => {
+                setGifs(gifs);
+            })
 
         e.target.reset();
     }
 
-    function getGifs(url) {
-
-        fetch(url)
-            .then(res => res.json())
-            .then(data => data.data)
-            .then(data => {
-                let gifs = [];
-                for (let i = 0; i < data.length; i++) {
-                    gifs.push({
-                        src: data[i].images.downsized.url,
-                        alt: data[i].title,
-                        id: data[i].id
-                    });
-                }
-                setGifs(gifs);
-            })
-            .catch(error => console.error(error));
-    }
 
     return (
         <form onSubmit={handleSubmit}>
