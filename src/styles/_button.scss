@@ -1,0 +1,21 @@
+
+$primaryBtnColor: rgb(81, 147, 163);
+$primaryHoverColor: rgba(81, 147, 163, 0.842);
+$textColor: white;
+
+
+button{
+    background-color: $primaryBtnColor;
+    color: $textColor;
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 3%;
+    :hover{
+        background-color: $primaryHoverColor;
+    }
+}
+
