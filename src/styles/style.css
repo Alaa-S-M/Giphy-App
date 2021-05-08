@@ -27,4 +27,23 @@ form {
   width: 75%;
   margin: auto;
 }
+
+.grid-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10%;
+  gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid-container img {
+  max-width: 33vw;
+  max-height: 33vh;
+}
 /*# sourceMappingURL=style.css.map */

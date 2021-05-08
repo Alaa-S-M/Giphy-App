@@ -5,3 +5,16 @@ form{
     width: 75%;
     margin: auto;
 }
+
+.grid-container{
+    display: flex;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    margin: 10%;
+    gap: 5px;
+    justify-content: center;
+    img{
+        max-width: 33vw;
+        max-height: 33vh;
+    }
+}
