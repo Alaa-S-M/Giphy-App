@@ -1,4 +1,4 @@
-# Deployed version: http://alaa-s-m.github.io/Giphy-App
+## Deployed version: http://alaa-s-m.github.io/Giphy-App
 
 # Getting Started with Create React App
 
